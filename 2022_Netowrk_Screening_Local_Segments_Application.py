@@ -9,7 +9,6 @@ DB_Output = pd.read_excel('new_collapsed_segments.xlsx')
 DB_Output
 df = DB_Output.copy()
 df.info()
-df
 
 # rename Highway Class Code column to join on the SPF Highway Class Code column (requires same name)
 df.rename(columns={'HighwayClassCode': 'HwyClass'}, inplace=True)
